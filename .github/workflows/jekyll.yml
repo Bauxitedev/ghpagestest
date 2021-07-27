@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+
+        - uses: actions/checkout@v2
+            
         - name: Init
           run: mkdir public
           
-        - uses: actions/checkout@v2
-        
   #      - name: Setup tmate session
   #        uses: mxschmitt/action-tmate@v3
     
