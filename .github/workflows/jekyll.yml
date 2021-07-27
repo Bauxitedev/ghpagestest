@@ -13,7 +13,7 @@ jobs:
 
     steps:
         - name: Touch html file
-        - run: echo "hello from github actions" > public/index.html
+          run: echo "hello from github actions" > public/index.html
         
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
