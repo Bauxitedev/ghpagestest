@@ -15,10 +15,10 @@ jobs:
         - name: Init
           run: mkdir public
           
-        - name: Debuggging with tmate
-          # You may pin to the exact commit or the version.
-          # uses: GitHub30/action-tmate@7a4c478c598693c8e03332a5d349360704f758e0
-          uses: GitHub30/action-tmate@master2
+        - uses: actions/checkout@v2
+        
+        - name: Setup tmate session
+          uses: mxschmitt/action-tmate@v3
     
         - name: Touch html file
           run: |
