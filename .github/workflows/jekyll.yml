@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+        - name: Init
+          run: mkdir public
+    
         - name: Touch html file
           run: echo "hello from github actions" > public/index.html
         
