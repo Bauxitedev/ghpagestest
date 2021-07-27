@@ -17,8 +17,8 @@ jobs:
     
         - name: Touch html file
           run: |
-               echo "hello from github actions. <b> the current date is" > public/index.html \
-               && date >> public/index.html \ 
+               echo "hello from github actions. <b> the current date is" > public/index.html 
+               && date >> public/index.html 
                && echo ".</b>" >> public/index.html
         
         - name: Deploy
